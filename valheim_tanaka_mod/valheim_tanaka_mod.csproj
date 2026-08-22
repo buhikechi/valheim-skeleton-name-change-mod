@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net462</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <ExecutePrebuild>true</ExecutePrebuild>
+    <VALHEIM_INSTALL>D:\SteamLibrary\steamapps\common\Valheim</VALHEIM_INSTALL>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JotunnLib" Version="2.29.2" />
+  </ItemGroup>
+
+  <Target Name="CopyToPlugins" AfterTargets="Build" Condition="Exists('$(VALHEIM_INSTALL)\BepInEx\plugins')">
+    <Copy SourceFiles="$(TargetDir)$(TargetName).dll" DestinationFolder="$(VALHEIM_INSTALL)\BepInEx\plugins\$(TargetName)" />
+  </Target>
+
+</Project>
