@@ -3,7 +3,7 @@ using Jotunn.Managers;
 using System.Collections.Generic;
 using System.Xml;
 
-[BepInPlugin("yourname.SkeleNamesJP", "SkeleNamesJP", "1.0.0")]
+[BepInPlugin("buhikechi.SkeleNamesJP", "SkeleNamesJP", "1.0.0")]
 [BepInDependency(Jotunn.Main.ModGuid)]
 internal class SkeleNamesJP : BaseUnityPlugin
 {
