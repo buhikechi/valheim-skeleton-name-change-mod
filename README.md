@@ -18,8 +18,12 @@ Valheim で召喚したスケルトン（`Skeleton_Friendly`）に付くラン�
 ## 導入
 
 1. BepInEx と Jötunn を入れる
-2. ビルドしてできた `valheim_tanaka_mod.dll` を
+2. [Releases](https://github.com/buhikechi/valheim-skeleton-name-change-mod/releases/latest) から
+   `SkeleNamesJP-Tanaka-v1.0.0.zip` をダウンロードして展開する
+3. 中の `valheim_tanaka_mod.dll` を
    `Valheim/BepInEx/plugins/valheim_tanaka_mod/` に置く
+
+自分でビルドする場合は、下の「ビルド」を見てください。
 
 ## 名前を変える
 
